@@ -134,11 +134,11 @@ body{
   font-family: 'Open Sans', sans-serif;
   padding-top: 10px;
   padding-bottom: 20px;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
   color: black;
   border-radius: 50px;
-  grid-gap: 20px;
+  grid-gap: 25px;
 }
 .jeghar:hover{
   transform: scale(1.01);
