@@ -1,0 +1,186 @@
+ul{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+li{
+  float: left;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+}
+.ikkebildenavbar a{
+  display: block;
+  padding: 24px;
+  margin: 0px;
+  text-align: center;
+  color: white;
+  background-color: #e52437;
+  text-decoration: none;
+  transition: 1s;
+  border: #e52437 solid 2px;
+}
+.ikkebildenavbar a:hover{
+  background-color: white;
+  color: #e52437;
+  transition: 1s;
+  border: #e52437 solid 2px;
+}
+.active{
+  background-color: blue;
+}
+.list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@media (max-width:900px) {
+  .list{
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+header{
+  width: auto;
+}
+body{
+  margin: 0px;
+}
+.velkommen{
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  padding-top: 100px;
+}
+.velkommen>h1{
+  font-weight: 700;
+  font-size: 40pt;
+}
+.velkommen>h3{
+  font-weight: 500;
+  font-size: 20pt;
+}
+.ommeg>h5{
+  font-weight: 400;
+  font-size: 30pt;
+}
+.ommeg{
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin-top: 250px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  background-color: #e52437;
+  margin-left: 25px;
+  margin-right: 25px;
+  color: white;
+}
+.ommeg>p{
+  margin-right: 50px;
+  margin-left: 50px;
+  font-size: 15pt;
+}
+.jegkan{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  background-color: #e52437;
+  margin-left: 25px;
+  margin-right: 25px;
+  color: black;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+@media (max-width:1100px) {
+  .jegkan{
+    grid-template-columns: 1fr;
+  }
+
+}
+@media (max-width:1100px) {
+  .jegkan>img{
+    max-width: 150px;
+    min-width: 150px;
+  }
+
+}
+.del{
+  background-color: white;
+  margin: 25px;
+  border-radius: 50px;
+}
+.del>img{
+  max-width: 300px;
+  min-width: 300px;
+}
+.del>p{
+  margin-top: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.del>h3{
+  font-size: 40pt;
+  font-weight: 300;
+}
+.jeglaget{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  color: black;
+  border-radius: 50px;
+  grid-gap: 20px;
+}
+@media (max-width:1100px) {
+  .jeglaget{
+    grid-template-columns: 1fr;
+  }
+
+}
+.jeghar>a>img{
+  width: 100%;
+  max-height: 300px;
+}
+.jeghar{
+  max-height: 1fr;
+  min-height: 1fr;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 25px;
+}
+footer{
+  margin-top: 200px;
+  font-family: GT Walsheim,Helvetica,sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #e52437;
+  color: white;
+  text-align: center;
+}
+.footertekst{
+  padding-top: 15px;
+  margin-left: 200px;
+  margin-right: 20px;
+  color: white;
+  font-size: 14px;
+}
+.Kontakt{
+  margin-left: 200px;
+  margin-right: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+}
