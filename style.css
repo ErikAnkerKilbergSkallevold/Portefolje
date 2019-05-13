@@ -129,11 +129,11 @@ body{
 }
 .jeglaget{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  padding-top: 100px;
+  padding-top: 10px;
   padding-bottom: 20px;
   margin-left: 25px;
   margin-right: 25px;
@@ -143,20 +143,21 @@ body{
 }
 @media (max-width:1100px) {
   .jeglaget{
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
 }
 .jeghar>a>img{
   width: 100%;
-  max-height: 300px;
+  max-height: 200px;
 }
 .jeghar{
   max-height: 1fr;
   min-height: 1fr;
-  background-color: #f1f1f1;
+  background-color: white;
   padding: 20px;
   border-radius: 25px;
+
 }
 footer{
   margin-top: 200px;
@@ -183,4 +184,18 @@ footer{
   font-size: 14px;
   font-weight: 300;
   color: white;
+}
+.mitt>h2{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40pt;
+  font-weight: 600;
+  justify-content: center;
+  text-align: center;
+  padding-top: 100px;
+}
+.minenettsider{
+  background-color: #f1f1f1;
+  border-radius: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
