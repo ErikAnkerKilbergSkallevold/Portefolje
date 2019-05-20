@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hyperthreading</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Hva er hyperthreading?</h1>
+    </header>
+    <main>
+      <section class="innledning">
+        <h2>Myten</h2>
+        <br>
+        <p>Hyperthreading, mange tror det betyr at man får dobbelt så mange kjerner. Det vil si at hvis en i7 6700k har 4 kjerner og hyperthreading, så har den 8 kjerner. Det kommer jo til og med opp i «hwinfo64». Så hvorfor får vi ikke dobbelt så mye datakraft? Det er fordi hyperthreading ikke magisk dobler antallet kjerner, hvis jeg putter i7en min under et mikroskop ser man fortsatt bare 4 kjerner. Vil du vite mer om hyperthreading? Skroll ned.</p>
+        <br>
+        <img src="bilder/i76700kark.PNG" alt="i7 6700k specsheet">
+      </section>
+      <section class="hva">
+        <h2>Hva er det?</h2>
+        <br>
+        <p>Hyperthreading er en proprietær Intel teknologi som bruker planleggeren og arbeidsmengden på en måte for å parallellisere prosesser. På norsk betyr det at planleggeren mer effektivt fordeler arbeidsoppgavene som sendes til logiske kjerner for å bli prosessert. 2 av dem lager en 1 fysisk kjerne.</p>
+        <br>
+        <img src="bilder\schedueler.gif" autoplay loop></img>
+      </section>
+      <section class="logisk">
+        <h2>Logiske kjerner</h2>
+        <br>
+        <p>«Logiske kjerner» er PC-en sin måte å gjenskape noen av CPU-en aspekter av CPU-en sin arkitektur. Ved å implementere hyperthreading på en fysisk kjerne vil to logiske kjerner bli oppdaget av nesten alle moderne operativsystemer. Dette gjør at data blir strømlinjeformet på en fordelaktig måte. Når en stor mengde data blir sendt gjennom CPU-en eller rørledningen vil planleggeren mer effektivt fordele oppgavene mellom de to logiske kjernene.</p>
+        <br>
+        <img src="bilder\logisk.gif" autoplay loop></img>
+      </section>
+      <section class="catch">
+        <h2>The catch</h2>
+        <br>
+        <p>Så her er greia. Siden bare en kjerne styrer over de logiske kjernene, kan bare en rørledning sende informasjon gjennom for å bli prosessert. Man trenger to fysiske kjerner for å prosessere to rørledninger med data samtidig.</p>
+        <br>
+        <img src="bilder/2isnot1.gif" autoplay loop></img>
+      </section>
+      <section class="lc1lc2">
+        <h2>Men det er fortsatt bra</h2>
+        <br>
+        <p>Siden planleggeren nå ser at det er to rørledninger kan den jakte på mer data å prosessere for LC2 samtidig som det går data ned LC1. Når dataen i LC2 nærmer seg sluttpunktet har dataen i LC1 allerede blitt utført. Sånn går det i en loop. </p>
+        <br>
+        <img src="bilder/lc1lc2.gif" loop autoplay></img>
+      </section>
+      <section class="uten">
+        <h2>Uten hyperthreading</h2>
+        <br>
+        <p>I et scenario uten hyperthreading, for eksempel i en i5 6600k som har 4 kjerner og 4 logiske kjerner vil ikke data alltid være forberedt av planleggeren i tide, noe som kan føre til at kjernen venter på mer. Når man ikke har hyperthreading kan ikke planleggeren forberede data mens den sender data, noe som fører til forsinkelser og lag. </p>
+        <br>
+        <img src="bilder/1core.gif" loop autoplay></img>
+      </section>
+      <section class="oppsummer">
+        <h2>Oppsummering</h2>
+        <br>
+        <p>Så hyperthreading dobler ikke antallet kjerner, det bare lurer planleggeren til å tro at det er dobbelt så mange rørledninger enn det det egentlig er. For en 6600k med bare 4 kjerner kan planleggeren bli overbelastet med informasjon, men for en i7 6700k med 4 kjerner og 8 logiske kjerner kan planleggeren sende arbeidsoppgaver mer effektivt. Men husk at du fortsatt bare har 4 kjerner, og i7-en er ikke dobbelt så rask som i5 på grunn av hyperthreading. Animasjonen under viser en i5 6600k</p>
+        <br>
+        <img src="bilder/i56600k.gif" loop autoplay></img>
+      </section>
+    </main>
+    <footer>
+      <p>Laget av Erik</p>
+    </footer>
+  </body>
+</html>

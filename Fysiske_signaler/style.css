@@ -1,0 +1,89 @@
+h1{
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+p{
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+h2{
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-weight: 400;
+}
+.innledning{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 10%;
+  justify-content: center;
+  text-align: center;
+}
+.innledning>img{
+  width: 75%;
+}
+header{
+  margin-top: 10%
+}
+.hva{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 10%;
+  justify-content: center;
+  text-align: center;
+}
+.hva>img{
+  width: 75%;
+}
+.logisk{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 10%;
+  justify-content: center;
+  text-align: center;
+}
+.logisk>img{
+  width: 75%;
+}
+.lc1lc2{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 10%;
+  justify-content: center;
+  text-align: center;
+}
+.lc1lc2>img{
+  width: 75%;
+}
+.catch{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 10%;
+  justify-content: center;
+  text-align: center;
+}
+.catch>img{
+  width: 75%;
+}
+.uten{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 10%;
+  justify-content: center;
+  text-align: center;
+}
+.uten>img{
+  width: 75%;
+}
+.oppsummer{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 10%;
+  justify-content: center;
+  text-align: center;
+}
+.oppsummer>img{
+  width: 75%;
+}
+footer{
+  margin-top: 10%;
+}

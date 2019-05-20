@@ -18,13 +18,13 @@ li{
   color: white;
   background-color: #e52437;
   text-decoration: none;
-  transition: 1s;
+  transition: 0.5s;
   border: #e52437 solid 2px;
 }
 .ikkebildenavbar a:hover{
   background-color: white;
   color: #e52437;
-  transition: 1s;
+  transition: 0.5s;
   border: #e52437 solid 2px;
 }
 .active{
@@ -219,4 +219,22 @@ footer{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.nyeste{
+  justify-content: center;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f1f1f1;
+  border-radius: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 100px;
+}
+.nyeste>img{
+  width: 75%;
+  border-radius: 50px;
+}
+.engrid{
+  grid-template-columns: 1fr;
+  display: grid;
 }
